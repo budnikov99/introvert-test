@@ -1,0 +1,17 @@
+{
+    "id": 2,
+    "name": "lead2",
+    "price": 7654321,
+    "_embedded": {
+        "contacts": [
+            {
+                "id": 4,
+                "is_main": true
+            },
+            {
+                "id": 1,
+                "is_main": false
+            }
+        ]
+    }
+}

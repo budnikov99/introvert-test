@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "name": "contact1",
+    "first_name": "Иван",
+    "last_name": "Иванов",
+    "_embedded": {
+        "leads": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+        ]
+    }
+}

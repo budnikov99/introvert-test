@@ -1,0 +1,13 @@
+{
+    "id": 4,
+    "name": "contact4",
+    "first_name": "Василий",
+    "last_name": "Пупкин",
+    "_embedded": {
+        "leads": [
+            {
+                "id": 2
+            }
+        ]
+    }
+}

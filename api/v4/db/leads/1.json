@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "name": "lead1",
+    "price": 1234567,
+    "_embedded": {
+        "contacts": [
+            {
+                "id": 1,
+                "is_main": true
+            }
+        ]
+    }
+}
