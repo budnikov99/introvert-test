@@ -1,0 +1,3 @@
+function addTasksToLeadlessContacts(){
+    alert("click");
+}
