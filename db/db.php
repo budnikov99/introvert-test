@@ -1,8 +1,8 @@
 <?php
 define("ROOT", $_SERVER["DOCUMENT_ROOT"]);
 
-function get_json($name){
-    $content = file_get_contents(ROOT."/db/".$name);
+function get_json($path){
+    $content = file_get_contents(ROOT."/db/".$path);
     if(!$content){
         return null;
     }
@@ -19,6 +19,10 @@ function get_json_all($dir){
         }
     }
     return $list;
+}
+
+function put_json($path, $contents){
+    file_put_contents(ROOT."/db/".$path.".json", json_encode($contents));
 }
 
 ?>
