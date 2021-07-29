@@ -2,6 +2,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 100%;
+}
+
+body > * {
+    margin-top: 10px;
 }

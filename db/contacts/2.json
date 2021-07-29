@@ -3,5 +3,5 @@
     "name": "contact2",
     "first_name": "Пётр",
     "last_name": "Петров",
-    "_embedded": {}
+    "_embedded": {"leads": []}
 }

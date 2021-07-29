@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         ];
 
         foreach ($content as $taskdata) {
-            if(isset($taskdata->text) && isset($taskdata->complete_till)){
+            if(isset($taskdata->text) && isset($taskdata->complete_till)){  
                 $newid++;
                 $task = [
                     "id" => $newid,
@@ -49,13 +49,16 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
                 $response["_embedded"]["tasks"][] = [
                     "id" => $newid, 
                     "request_id" => $taskdata->request_id ?? "taskreq".$newid
-                ];
+                ]; 
                 put_json("tasks/".$newid, $task);
             }
         }
+        echo json_encode($response);
     }else{
         http_response_code(400);
     }
+}else{
+    http_response_code(501);
 }
 
 ?>
